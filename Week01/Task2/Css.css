@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 20%;
+  
+    margin: 60px 0px 40px 170px;
+    height: 850px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 0px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 55%;
+    margin: 60px 40px 40px 0px;
+    background-color: #f1f1f1;
+    height: 850px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  img {
+      vertical-align: middle;
+      max-width: 100%;
+  }
+  .avatar {
+     
+      width: auto;
+      height:275px ;
+      margin:0px 0px 0px 0px;
+  
+      text-align: center;
+      padding-top:0px;
+      background: #075d88;
+  }
+  .avatar img {
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .1);
+  }
+  .infor{
+    padding: 20px 20px 0 20px;
+  
+   
+  }
+  span{
+   
+    font-size: 19px;
+    padding: 10px;
+    height: 10px;
+  }
+  .infor i{
+    padding-bottom: 10px;
+  }
+  .progress_bar{
+  
+    text-align: center;
+    
+  }
+  
+  .progress_bar_li{
+    padding-top: 10px;
+   
+    
+    
+  }
+  h3{
+    text-align: left;
+    margin-left:20px;
+    color:white;
+  }
+  
+  .workingskils{
+    color:white;
+    padding:10px 10px 10px 50px;
+    font-size:18px;
+  }
+  
+  .education{
+    font-size:25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  .box1 {
+    float: left;
+    width: 78%;
+   
+  }
+  .box2 {
+    float: right;
+    width: 21%;
+  }

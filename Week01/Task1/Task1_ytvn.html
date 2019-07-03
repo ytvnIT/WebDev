@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Trần Văn Như Ý-Task1</title>      
+    <link rel="stylesheet" href="Css.css">       
+    </head>
+  
+    <body  >
+    <header>TRẦN VĂN NHƯ Ý</header>
+
+    <section>
+        <nav>
+            <ul>
+              <li><a href="https://www.facebook.com/profile.php?id=100006959403782">Facebook</a></li>
+          </ul>
+          </nav>
+        
+        <article >
+            <h1>Câu hỏi</h1>
+            
+                <ol type="a">
+                    <li>
+                        <strong><em>So sánh file HTML có định dạng .html và .htm. Nếu không có các thẻ &#60;html&#62;, &#60;head&#62; và &#60;body&#62; thì có ảnh hưởng gì trong file HTML không?</em></strong>
+                    </li>       
+                    <li>
+                        <strong><em>Có những cách nào để hiển thị các thẻ HTML để hiển thị ra bên ngoài mà không bị HTMLxử lý. Ví dụ hiển thị các nội dung như  &#60;/br&#62;  &#60;div&#62; &#60;h1&#62;Hello HTML &#60;/h1&#62; &#60;/div&#62;</em></strong>
+                    </li>  
+                    <li>
+                        <strong><em>. Làm thế nào để tạo vùng chọn để định dạng trong CSS cho một tag, một class, một ID?</em></strong>
+                    </li> 
+                    <li>
+                        <strong><em>Tìm và cho ví dụ về các thẻ có các chức năng sau:</em></strong>
+                        <ul style="list-style-type:square;">
+                            <li>
+                                Gạch chân, kẻ đường ngang, chỉ số trên/dưới.
+                            </li>
+                            <li>
+                                Tạo bảng (có ghép dòng, ghép cột)
+                            </li>
+                            <li>
+                                4 hiệu ứng chữ chạy từ 4 hướng (trái, phải, trên, dưới).
+                            </li>
+                        </ul>
+                    </li>  
+                </ol>
+            
+
+            <h1>Trả lời</h1>
+            <div>
+                    <ol type="a">
+                            <li>
+                                <strong><em>So sánh file HTML có định dạng .html và .htm. Nếu không có các thẻ &#60;html&#62;, &#60;head&#62; và &#60;body&#62; thì có ảnh hưởng gì trong file HTML không?</em></strong>
+                                <textarea name="message" style="width:1000px; height:150px;">Cả hai file .html và .htm hoàn toàn giống nhau, chúng có thể thay thế cho nhau. Lý do là vì ngày xưa phần mở rộng của file chỉ được cho phép sử dụng 3 kí tự. &#10;Nếu không có các thẻ &#60;html&#62;, &#60;head&#62; và &#60;body&#62; thì không ảnh hưởng gì đối với file HTML. </textarea>
+                            </li>       
+                            <li>
+                                <strong><em>Có những cách nào để hiển thị các thẻ HTML để hiển thị ra bên ngoài mà không bị HTMLxử lý. Ví dụ hiển thị các nội dung như  &#60;/br&#62;  &#60;div&#62; &#60;h1&#62;Hello HTML &#60;/h1&#62;</em></strong>
+                                <textarea name="message" style="width:1000px; height:150px;">Nếu sử dụng dấu nhỏ hơn (<) hoặc dấu lớn hơn (>) trong nội dung trang, trình duyệt sẽ nghĩ là muốn sử dụng thẻ.&#10;Nên ta phải sử dụng kí tự thực thể:&#10;-Để hiển thị dấu nhỏ hơn "<" bạn có thể dùng: & lt; hoặc & #60;&#10;-Để hiển thị dấu lớn hơn ">" bạn có thể dùng: & gt; hoặc & #62;.</textarea>
+                            </li>  
+                            <li>
+                                <strong><em>. Làm thế nào để tạo vùng chọn để định dạng trong CSS cho một tag, một class, một ID?</em></strong>
+                                <textarea name="message" style="width:1000px; height:150px;">1.Chọn theo tên thẻ (Type selector)&#10;a{ attribute: value;}&#10;2.Chọn theo class (Class selector)&#10;.item{ attribute: value;}&#10;3.Chọn theo ID (ID selector)&#10;#main{ attribute: value;}&#10;                                       
+                               </textarea>
+                            </li> 
+                            <li>
+                                <strong><em>Tìm và cho ví dụ về các thẻ có các chức năng sau:</em></strong>
+                                <ul style="list-style-type:square;">
+                                    <li>
+                                        Gạch chân, kẻ đường ngang, chỉ số trên/dưới.
+                                       <div >
+                                           <p class="forP">
+                                               Thẻ gach chân: &lt;u&gt;&lt;/u&gt;<br>
+                                                <u>Gạch chân</u>
+                                            </p>
+                                           <p class="forP">
+                                            Thẻ đường kẻ ngang: &lt;hr&gt; <br>
+                                            <hr size=10px; color="orangered">
+                                            </p>
+                                            <p class="forP">
+                                                Thẻ chỉ số trên: &lt;sup&gt;&lt;/sup&gt;<br>
+                                                Chỉ <sup>số trên</sup><br>
+                                                Thẻ chỉ số dưới: &lt;sub&gt;&lt;/sub&gt;<br>
+                                                Chỉ <sub>số dưới</sub><br>
+                                            </p>
+                                       </div>
+                                    </li>
+                                    <li>
+                                        Tạo bảng (có ghép dòng, ghép cột)
+                                        <table style="width:100%">
+                                                <tr>
+                                                  <th>ABC</th>
+                                                  <th colspan="2">Number</th>
+                                                </tr>
+                                                <tr>
+                                                  <td>ABS</td>
+                                                  <td>123456</td>
+                                                  <td>987654</td>
+                                                </tr>
+                                        </table>
+                                        <br>
+                                        <table style="width:100%">
+                                                <tr>
+                                                    <th>ABC:</th>
+                                                    <td>Number</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="2">ABS</th>
+                                                    <td>123456</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>987654</td>
+                                                </tr>
+                                        </table>
+
+                                    </li>
+                                    <li>
+                                        4 hiệu ứng chữ chạy từ 4 hướng (trái, phải, trên, dưới).
+                                        <p class="forP">
+                                        <marquee direction="right">Sang phai</marquee>
+                                        </p>
+                                        <p class="forP">
+                                            <marquee direction="left">Sang trai</marquee>
+                                        </p>
+                                        <p class="forP">
+                                            <marquee direction="up">Lên trên</marquee>
+                                        </p>
+                                        <p class="forP">
+                                            <marquee direction="down">Xuống dưới</marquee>
+                                        </p>
+                                       
+                                      
+                                        
+                                        
+                                    </li>
+                                </ul>
+                            </li>  
+                        </ol>
+            </div>
+        </article>
+      </section>
+      <footer>Powered by ydapchai
+        </footer>
+    
+   
+    </body>
+</html>
