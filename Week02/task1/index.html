@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ytvn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+        <!-- <nav class="navbar nav-pills navbar-expand-lg navbar-dark bg-dark"> -->
+            <nav class="navbar nav-pills navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">17521287-Trần Văn Như Ý</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                      <!-- <ul class=" nav navbar-nav  nav-pills"> -->
+                          <ul class="nav navbar-nav mr-auto navbar-right">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="pill" href="#cau1">Câu 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  " data-toggle="pill" href="#cau2">Câu 2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#cau3">Câu 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#cau4">Câu 4</a>
+                          </li>
+                      
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 navbar-right">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-3 ">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="cau1-tab" data-toggle="pill" href="#cau1"  role="tab" aria-controls="cau1" aria-selected="true">Câu 1</a>
+                    <a class="nav-link" id="cau2-tab" data-toggle="pill" href="#cau2" role="tab" aria-controls="cau2" aria-selected="false">Câu 2</a>
+                    <a class="nav-link" id="cau3-tab" data-toggle="pill" href="#cau3" role="tab" aria-controls="cau3" aria-selected="false">Câu 3</a>
+                    <a class="nav-link" id="cau4-tab" data-toggle="pill" href="#cau4" role="tab" aria-controls="cau4" aria-selected="false">Câu 4</a>
+                  </div>
+                </div><!--col-3-->
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="cau1" role="tabpanel" aria-labelledby="cau1-tab">
+                       <p class="question">1.Trình bày các cách để tích hợp Bootstrap vào một trang HTML/CSS bình thường trong
+                          điều kiện đang có kết nối Internet? Trong Bootstrap đã được biên dịch gồm có những gì?</p>
+                        <ul class="answer">
+                          <li>
+                              Có hai cách tích hợp Bootstrap vào một trang HTML/CSS:
+                              <ul>
+                                <li>Sử dụng Bootsstrap từ CDN</li>
+                                <li>Doadload Bootstrap từ getbootstrap.com</li>
+                              </ul>
+                          </li>
+
+                          <li>
+                              Trong Bootstrap đã biên dịch có:
+                              <ul>
+                                <li>
+                                    css
+                                    <ul>
+                                        <li>bootstrap.css</li>
+                                        <li>bootstrap.min.css</li>
+                                        <li>bootstrap-theme.css</li>
+                                        <li>bootstrap-theme.min.css</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    js
+                                    <ul>
+                                        <li>bootstrap.js</li>
+                                        <li>bootstrap.min.js</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    fonts
+                                    <ul>
+                                        <li>glyphicons-halflings-regular.eot</li>
+                                        <li>glyphicons-halflings-regular.svg</li>
+                                        <li>glyphicons-halflings-regular.ttf</li>
+                                        <li>glyphicons-halflings-regular.woff</li>
+                                    </ul>
+                                </li>
+                              </ul>
+                             
+                          </li>
+                        </ul>
+                  
+                 
+                       
+                    </div>
+                    <div class="tab-pane fade" id="cau2" role="tabpanel" aria-labelledby="cau2-tab">
+                        <p class="question">2. Responsive là gì? Làm thế nào nếu muốn vô hiệu hóa tính năng Responsive khi đang sử
+                            dụng Bootstrap?</p>
+                        <ul class="answer">
+                            <li><p>Thiết kế web responsive là cách tạo web sites mà nó có thể tự động điều chỉnh
+                                    kích thước cho phù hợp với mọi thiết bị, từ điện thoại cho tới các máy tính 
+                                    lớn.</p></li>
+                            <li>
+                                Cách vô hiệu hóa tính năng Responsive khi sử dụng Bootstrap:
+                                <ul>
+                                  <li> Xóa bỏ thẻ &ltmeta&gt viewport</li>
+                                  <li>Ghi đè thuộc tính width trên .contain</li>
+                                  <li>Không sử dụng HTML5 doctype</li>                               
+                                </ul>
+                            </li>       
+                        </ul>
+                      </div>  
+                    <div class="tab-pane fade" id="cau3" role="tabpanel" aria-labelledby="cau3-tab">
+                        <p class="question">3.Tìm hiểu về hệ thống lưới (Grid System) của Bootstrap và so sánh hoạt động của hệ thống
+                            lưới này trên các thiết bị có kích thước màn hình khác nhau như Phones (<768px), Tablet
+                            ( ≥768px), Desktop( ≥992px và ≥1200px).</p>
+                        <ul class="answer">
+                          <li> <p>Grid system: Sử dụng mobile-first flexbox để tạo ra cách layout đầy đủ hình dạng
+                              và kích thước nhờ vào hệ thống 12 cột.</p></li>
+                          <li>
+                            Sự khác nhau giữa các kích thước màn hình:
+                            <ul>
+                              <li>.col- (extra small devices - screen width less than 576px)</li>
+                              <li>.col-sm- (small devices - screen width equal to or greater than 576px)</li>
+                              <li>.col-md- (medium devices - screen width equal to or greater than 768px)</li>
+                              <li>.col-lg- (large devices - screen width equal to or greater than 992px)</li>
+                              <li>.col-xl- (xlarge devices - screen width equal to or greater than 1200px)</li>
+                            </ul>
+                          </li>
+                          </ul>  
+                    </div>
+                    <div class="tab-pane fade" id="cau4" role="tabpanel" aria-labelledby="cau4-tab">
+                      <div class="container">
+                          <div>
+                              <p>+ Chèn 1 button 1 biểu tượng trong Button đó.</p>
+                              <button type="button" class="btn btn-primary">ytvn</button>
+                          </div>
+                          <div >
+                              <p>+ Chèn 1 thanh Progress bar (tiến trình) tương tự trong CV ở Task 1.2.</p>
+                              <div class="progress">
+                                  <div class="progress-bar bg-success" style="width:80%"></div>
+                              </div>                             
+                          </div>
+                          <div>
+                              + Chèn các loại cảnh báo (Alert) trong trang như Succes, Info, Danger, Warning.
+                              <div class="alert alert-success">
+                                  <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                              </div>
+                              <div class="alert alert-info">
+                                  <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                                </div>
+                              <div class="alert alert-danger">
+                                  <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                              </div>
+                              <div class="alert alert-warning">
+                                  <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                              </div>
+                          </div>
+                          <div>
+                              + Chèn 1 menu (Navigation) trong đó có 1 mục có menu con xổ xuống.
+                              <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                                  <!-- Brand -->
+                                  <a class="navbar-brand" href="#">ytvn</a>
+                                
+                                  <!-- Links -->
+                                  <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link 2</a>
+                                    </li>
+                                
+                                    <!-- Dropdown -->
+                                    <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Dropdown link
+                                      </a>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </nav>
+                          </div>
+                      </div> <!--class="container"-->
+                    </div>
+                  </div>
+                </div ><!--col-9-->
+                
+
+          </div><!--row-->
+        </div>
+   
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
