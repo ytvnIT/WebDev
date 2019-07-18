@@ -1,0 +1,10 @@
+.card-header{
+    
+    /* background-image: url('../resource/img1.jpg'); */
+    background-color:orange;
+}
+
+.card-body{
+    background-color: yellow;
+}
+
